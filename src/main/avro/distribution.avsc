@@ -1,0 +1,22 @@
+{
+    "namespace": "test.avroparquet",
+    "type": "record",
+    "name": "Distribution",
+    "fields": [
+        {"name": "id", "type": "int"},
+        {"name": "transaction_id", "type": ["int","null"]},
+        {"name": "sender",  "type": "string"},
+        {"name": "abonent", "type": "string"},
+        {"name": "sms_text", "type": ["string", "null"]},
+        {"name": "add_date", "type": ["long", "null"]},
+        {"name": "send_date", "type": ["long", "null"]},
+        {"name": "delivery_date", "type": ["long", "null"]},
+
+        {"name": "pending_count", "type": "int"},
+        {"name": "accepted_count", "type": "int"},
+        {"name": "delivered_count", "type": "int"},
+        {"name": "rejected_count", "type": "int"},
+
+        {"name": "error", "type": ["string", "null"]}
+    ]
+}
